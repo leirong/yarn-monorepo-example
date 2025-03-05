@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { Command } from 'commander'
+import { add, divide, subtract } from '@lryarn/core'
 import chalk from 'chalk'
-import { add, minus } from '@lryarn/core'
+import { Command } from 'commander'
 
 const program = new Command()
 
@@ -17,12 +17,20 @@ program
   })
 
 program
-  .command('minus')
+  .command('subtract')
   .description('计算减法')
   .argument('<number>', '第一个数字')
   .argument('<number>', '第二个数字')
   .action((num1, num2) => {
-    console.log(chalk.green(minus(Number(num1), Number(num2))))
+    console.log(chalk.green(subtract(Number(num1), Number(num2))))
+  })
+
+program
+  .command('divide')
+  .argument('<number>', '第一个数字')
+  .argument('<number>', '第二个数字')
+  .action((num1, num2) => {
+    console.log(chalk.green(divide(Number(num1), Number(num2))))
   })
 
 program.parse()

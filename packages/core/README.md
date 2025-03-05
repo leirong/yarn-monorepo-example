@@ -11,13 +11,16 @@ npm install @lryarn/core
 ## 使用方法
 
 ```typescript
-import { add, minus } from '@lryarn/core'
+import { add, subtract, divided } from '@lryarn/core'
 
 // 加法
 const sum = add(1, 2) // 返回 3
 
 // 减法
-const difference = minus(5, 3) // 返回 2
+const difference = subtract(5, 3) // 返回 2
+
+// 除法
+const divided = divide(6, 2) // 返回 3
 ```
 
 ## API
@@ -32,7 +35,7 @@ const difference = minus(5, 3) // 返回 2
 - b: 第二个数字
   返回：两个数字的和
 
-### minus(a: number, b: number): number
+### subtract(a: number, b: number): number
 
 执行减法运算。
 
@@ -41,3 +44,13 @@ const difference = minus(5, 3) // 返回 2
 - a: 第一个数字
 - b: 第二个数字
   返回：两个数字的差
+
+### divide(a: number, b: number): number
+
+执行除法运算。
+
+参数：
+
+- a: 第一个数字
+- b: 第二个数字
+  返回：两个数字的商

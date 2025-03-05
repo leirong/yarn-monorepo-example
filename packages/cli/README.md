@@ -19,7 +19,10 @@ npm install -g @lryarn/cli
 calc add 1 2
 
 # 减法
-calc minus 5 3
+calc subtract 5 3
+
+# 除法
+calc divide 6 2
 ```
 
 ## 开发

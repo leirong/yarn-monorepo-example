@@ -1,24 +1,24 @@
 {
   "name": "@lryarn/cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "bin": {
     "calc": "dist/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
+    "@lryarn/core": "1.1.0",
     "chalk": "^5.4.1",
-    "commander": "^13.1.0",
-    "@lryarn/core": "1.0.0"
+    "commander": "^13.1.0"
   },
   "publishConfig": {
     "access": "public"
