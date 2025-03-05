@@ -1,17 +1,17 @@
-# @lry/core
+# @lryarn/core
 
 数学计算的核心功能模块。
 
 ## 安装
 
 ```bash
-npm install @lry/core
+npm install @lryarn/core
 ```
 
 ## 使用方法
 
 ```typescript
-import { add, minus } from '@lry/core'
+import { add, minus } from '@lryarn/core'
 
 // 加法
 const sum = add(1, 2) // 返回 3

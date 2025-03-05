@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
 import chalk from 'chalk'
-import { add, minus } from '@lry/core'
+import { add, minus } from '@lryarn/core'
 
 const program = new Command()
 

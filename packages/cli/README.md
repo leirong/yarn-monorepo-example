@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-npm install -g @lry/cli
+npm install -g @lryarn/cli
 ```
 
 ## 使用方法
