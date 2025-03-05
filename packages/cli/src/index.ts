@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { add, divide, subtract } from '@lryarn/core'
+import { add, divide, multiply, subtract } from '@lryarn/core'
 import chalk from 'chalk'
 import { Command } from 'commander'
 
@@ -31,6 +31,14 @@ program
   .argument('<number>', '第二个数字')
   .action((num1, num2) => {
     console.log(chalk.green(divide(Number(num1), Number(num2))))
+  })
+
+program
+  .command('multiply')
+  .argument('<number>', '第一个数字')
+  .argument('<number>', '第二个数字')
+  .action((num1, num2) => {
+    console.log(chalk.green(multiply(Number(num1), Number(num2))))
   })
 
 program.parse()

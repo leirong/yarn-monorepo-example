@@ -10,4 +10,8 @@ function divide(a: number, b: number) {
   return a / b
 }
 
-export { add, divide, subtract }
+function multiply(a: number, b: number) {
+  return a * b
+}
+
+export { add, divide, multiply, subtract }

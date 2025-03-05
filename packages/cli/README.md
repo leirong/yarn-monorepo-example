@@ -23,6 +23,9 @@ calc subtract 5 3
 
 # 除法
 calc divide 6 2
+
+# 乘法
+calc multiply 6 2
 ```
 
 ## 开发

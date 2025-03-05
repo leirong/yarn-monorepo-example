@@ -11,7 +11,7 @@ npm install @lryarn/core
 ## 使用方法
 
 ```typescript
-import { add, subtract, divided } from '@lryarn/core'
+import { add, subtract, divided, multiply } from '@lryarn/core'
 
 // 加法
 const sum = add(1, 2) // 返回 3
@@ -21,6 +21,9 @@ const difference = subtract(5, 3) // 返回 2
 
 // 除法
 const divided = divide(6, 2) // 返回 3
+
+// 乘法
+const amass = multiply(6, 2) // 返回 12
 ```
 
 ## API
